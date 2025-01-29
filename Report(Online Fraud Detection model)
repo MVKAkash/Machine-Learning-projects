@@ -1,0 +1,13 @@
+Fraud Detection Model Report
+
+1) Best Data Cleaning Techniques:
+-Handled missing values through imputation or removal.
+-Encoded categorical variables using Label Encoding.
+-Removed duplicate records to avoid redundancy.
+-Standardized numerical features using StandardScaler.
+
+2) Best Model and Why
+Gradient Boosting was the best model due to its ability to handle imbalanced data, capture complex patterns, and provide high accuracy with minimal overfitting.
+
+3) Final Model and Prediction
+The final model, Gradient Boosting Classifier, was trained and tested on cleaned data. It provided accurate fraud detection predictions, achieving high accuracy and minimal mean squared error (MSE).
