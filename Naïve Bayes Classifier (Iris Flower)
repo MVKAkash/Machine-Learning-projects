@@ -1,0 +1,55 @@
+Iris Flower Classification using Naïve Bayes Classifier
+
+1) Data Preprocessing Techniques
+
+ Dataset: The dataset consists of measurements of iris flowers (Sepal Length, Sepal Width, Petal Length, Petal Width) with the target variable being the species (Setosa, Versicolor, Virginica).
+
+ Handling Missing Values: No missing values were found in the dataset.
+
+ Feature Engineering:
+
+Removed the Id column as it was irrelevant.
+Ordinal Encoding was applied to the target variable (Species) to convert categorical labels into numerical form.
+
+ Exploratory Data Analysis (EDA):
+
+Used Seaborn pair plots to visualize the distribution of different iris species based on feature measurements.
+Generated a correlation heatmap to analyze relationships between numerical features.
+
+2) Model Selection and Optimization
+
+ Chosen Model: Gaussian Naïve Bayes (GaussianNB).
+
+ Reason: GaussianNB assumes a normal distribution of feature values, which aligns well with the continuous nature of the iris dataset.
+
+ Data Splitting:
+
+The dataset was split into 80% training and 20% testing.
+
+ Model Training:
+
+A Gaussian Naïve Bayes classifier was trained on the dataset.
+The model made probabilistic predictions based on feature distributions.
+
+3) Model Performance
+
+ Evaluation Metrics Used:
+
+Accuracy Score
+Confusion Matrix
+Classification Report (Precision, Recall, F1-score)
+
+ Results:
+
+The Naïve Bayes classifier achieved high accuracy, correctly classifying most of the iris species.
+Confusion matrix analysis showed that most misclassifications occurred between Versicolor and Virginica, which have overlapping feature distributions.
+
+4) Conclusion and Findings
+
+The Gaussian Naïve Bayes model performed well due to the normal distribution of feature values.
+
+ Future Improvements:
+
+Experiment with other Naïve Bayes variants like MultinomialNB or ComplementNB to analyze their impact.
+Introduce Principal Component Analysis (PCA) to reduce dimensionality and visualize classification boundaries.
+Test with K-Nearest Neighbors (KNN) or Support Vector Machines (SVM) for a comparative analysis.
