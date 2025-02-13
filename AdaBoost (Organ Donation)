@@ -1,0 +1,6 @@
+Report on AdaBoost (Organ Donation Dataset):
+
+The dataset includes categories of organ donors, such as Donors after Brain Death (DBD) and Donors after Circulatory Death (DCD), with yearly donation counts.
+Data preprocessing involved encoding categorical variables and preparing features for training.
+The AdaBoost model was applied for classification or regression, depending on the task.
+The extracted information does not include accuracy, confusion matrix, or performance metrics.
