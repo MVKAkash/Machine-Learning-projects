@@ -1,0 +1,41 @@
+Gradient Boosting Model Report (Car Evaluation - Regression)
+
+1) Best Data Cleaning Techniques:
+
+Checked for missing values and confirmed that the dataset was complete.
+
+ Mapped categorical target variable to numerical values:
+
+'unacc' → 0
+'acc' → 1
+'good' → 2
+'vgood' → 3
+
+ Encoded categorical features using Ordinal Encoding with predefined rankings:
+
+Buying price, maintenance cost, number of doors, seating capacity, luggage boot size, and safety were mapped in order of priority.
+
+2) Best Model and Why
+
+XGBoost Regressor was used to predict car evaluation scores.
+
+ Why XGBoost?
+
+Handles both categorical and numerical data efficiently.
+Captures complex relationships in ordinal data.
+Provides high accuracy with minimal overfitting.
+
+3) Final Model and Prediction
+
+ Final Model: XGBoost Regressor trained on encoded dataset.
+
+ Performance Metrics:
+
+ Mean Squared Error (MSE): Used to evaluate prediction error.
+
+ R² Score: Measured how well the model explains the variance in car evaluations.
+
+ Findings:
+
+The model successfully predicts car evaluation ratings based on input features.
+Feature importance analysis shows that safety and buying price are the most influential factors.
