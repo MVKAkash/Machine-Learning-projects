@@ -1,0 +1,50 @@
+Gradient Boosting Model Report (Online Shoppers Dataset)
+
+1) Best Data Cleaning Techniques:
+
+Handled missing values by checking for null values and ensuring clean data input.
+
+ Separated features and target variable:
+
+ Target variable: Revenue (converted to binary classification: 1 for purchase, 0 for no purchase).
+
+ Features: A mix of numerical and categorical data.
+
+ Created new features to improve model performance:
+
+Total session duration.
+Average duration per administrative, informational, and product-related pages.
+
+ Preprocessed data using a pipeline:
+
+Standardized numerical features using StandardScaler.
+Encoded categorical features using OneHotEncoder.
+
+2) Best Model and Why
+
+XGBoost (Extreme Gradient Boosting) Classifier was used for fraud detection.
+
+ Why XGBoost?
+
+Handles imbalanced data effectively.
+Captures non-linear relationships in shopping behavior.
+Provides high accuracy with minimal overfitting.
+
+3) Final Model and Prediction
+
+ Final Model: XGBoost Classifier trained on the processed dataset.
+
+ Performance Metrics:
+
+ Accuracy: Evaluated on test data.
+
+ Classification Report: Precision, Recall, F1-score for both classes.
+
+ Confusion Matrix: Visualized with heatmaps to show model performance.
+
+Findings:
+
+The model effectively predicts whether an online shopper will make a purchase.
+Feature engineering and preprocessing significantly improved performance.
+The model effectively predicts whether an online shopper will make a purchase.
+Feature engineering and preprocessing significantly improved performance.
