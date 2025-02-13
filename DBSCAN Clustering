@@ -1,0 +1,11 @@
+Report on DBSCAN Clustering:
+
+The dataset was clustered using DBSCAN, optimizing parameters eps = 0.4 and min_samples = 5.
+The silhouette score for clustering was 0.4133, indicating moderate clustering performance.
+Clusters formed:
+Cluster 0: 115 samples
+Cluster 2: 32 samples
+Cluster 3: 27 samples
+Cluster 1: 11 samples
+Outliers (-1): 15 samples
+Analysis showed variations in Annual Income and Spending Score among clusters.
