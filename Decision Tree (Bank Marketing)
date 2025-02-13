@@ -1,0 +1,6 @@
+Report on Decision Tree (Bank Marketing Dataset):
+
+The dataset contains 11,162 entries with 17 columns, including features like age, job, marital status, education, and balance.
+Data preprocessing involved splitting into X_train (8,929 samples) and X_test (2,233 samples) with 36 features after encoding.
+The Decision Tree model achieved an accuracy of 76.57%.
+The confusion matrix and classification report indicate balanced precision and recall, suggesting good performance.
