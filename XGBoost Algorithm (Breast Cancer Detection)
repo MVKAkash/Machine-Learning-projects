@@ -1,0 +1,42 @@
+Breast Cancer Detection using XGBoost Algorithm
+
+1) Data Preprocessing Techniques
+
+ Missing Values Handling: Not explicitly mentioned but likely handled in preprocessing.
+
+ Feature Encoding: The diagnosis column was label-encoded to convert categorical values into numerical form.
+
+ Feature Selection: The "id" column was removed to prevent irrelevant information from affecting the model.
+
+ Train-Test Split: The dataset was split into 75% training and 25% testing using stratified sampling for balanced class distribution.
+
+2) Model Selection and Optimization
+
+ Chosen Model: XGBoost Classifier.
+
+ Reason: XGBoost is robust, handles complex patterns well, and efficiently deals with imbalanced datasets.
+
+ Hyperparameter Tuning: Used RandomizedSearchCV with StratifiedKFold cross-validation to find the best model parameters. Parameters optimized include:
+
+Number of estimators
+Maximum tree depth
+Learning rate
+Subsampling rate
+Column sampling rate
+
+3) Model Performance
+
+ Best Model: The optimal parameters were selected using cross-validation.
+
+ Evaluation Metrics:
+
+ Accuracy: Computed on test data.
+
+ Classification Report: Precision, recall, and F1-score metrics were analyzed.
+
+ Confusion Matrix: Provided insights into false positives and false negatives.
+
+4) Feature Importance
+
+The model identified key features contributing to breast cancer classification.
+A feature importance plot was generated using Seaborn.
