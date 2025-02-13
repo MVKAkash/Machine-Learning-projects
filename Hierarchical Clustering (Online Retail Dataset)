@@ -1,0 +1,31 @@
+Hierarchical Clustering Model Report (Online Retail Dataset)
+
+1) Best Data Cleaning Techniques:
+
+Handled missing values by removing rows with missing 'CustomerID'.
+Filtered out transactions with negative or zero values in 'Quantity' and 'UnitPrice'.
+
+ Created a Recency-Frequency-Monetary (RFM) model:
+
+ Recency: Days since last purchase.
+
+ Frequency: Number of unique transactions.
+
+ Monetary: Total amount spent.
+Standardized features using StandardScaler.
+
+2) Best Model and Why
+
+Hierarchical Clustering (Agglomerative Clustering) was used to segment customers based on purchasing behavior.
+Dendrograms were utilized to determine the optimal number of clusters.
+The Ward linkage method was chosen as it minimizes variance within clusters, ensuring high-quality segmentation.
+
+3) Final Model and Clustering Results
+
+The final model grouped customers into segments based on purchasing patterns.
+
+ Key findings:
+
+Different customer clusters showed variations in recency, frequency, and spending behavior.
+Visualization using scatter plots helped interpret customer segments.
+The model can help businesses tailor marketing strategies based on customer segmentation.
