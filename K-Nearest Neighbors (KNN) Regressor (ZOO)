@@ -1,0 +1,60 @@
+Animal Classification using K-Nearest Neighbors (KNN) Regressor
+
+1) Data Preprocessing Techniques
+
+ Dataset: The dataset contains various animal characteristics (e.g., number of legs, feathers, eggs, aquatic, airborne) with the target variable representing different animal classes.
+
+ Handling Missing Values:
+
+Checked for missing values; none were found.
+
+ Feature Engineering:
+
+ Ordinal Encoding: Applied to categorical features using OrdinalEncoder.
+
+ Feature Scaling: Standardized numerical features using StandardScaler.
+
+ Exploratory Data Analysis (EDA):
+
+Used Seaborn pair plots to analyze feature relationships.
+Generated a correlation heatmap to observe dependencies.
+
+2) Model Selection and Optimization
+
+ Chosen Model: K-Nearest Neighbors (KNN) Regressor.
+
+Reason: KNN is effective for classification and regression, particularly when feature relationships are non-linear.
+
+ Data Splitting:
+
+The dataset was split into 80% training and 20% testing.
+
+ Model Training:
+
+A KNN Regressor was trained with different values of K (neighbors).
+Cross-validation was performed to optimize hyperparameters.
+
+3) Model Performance
+
+ Evaluation Metrics Used:
+
+Mean Squared Error (MSE)
+R-Squared Score (R²)
+Confusion Matrix (for classification tasks)
+Classification Report (Precision, Recall, F1-score)
+
+ Results:
+
+The optimal K-value was selected based on accuracy and error metrics.
+The KNN model achieved high accuracy in classifying animals.
+The confusion matrix indicated that most misclassifications occurred between similar animal types.
+
+4) Conclusion and Findings
+
+KNN Regressor performed well in predicting animal classification.
+
+ Future Improvements:
+
+Try KNN Classifier instead of regression for better categorical predictions.
+Use Principal Component Analysis (PCA) to reduce dimensionality.
+Experiment with ensemble methods like Random Forest for comparison.
