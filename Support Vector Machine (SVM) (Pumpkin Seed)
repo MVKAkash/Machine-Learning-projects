@@ -1,0 +1,63 @@
+Pumpkin Seed Classification using Support Vector Machine (SVM)
+
+1) Data Preprocessing Techniques
+
+ Dataset: The dataset consists of various physical and chemical properties of pumpkin seeds.
+
+ Handling Missing Values: Checked for missing values, but none were reported.
+
+ Feature Engineering:
+
+Categorical columns were encoded using Label Encoding to convert them into numerical format.
+Standardized numerical features using StandardScaler to improve SVM performance.
+
+ Exploratory Data Analysis (EDA):
+
+Generated a correlation heatmap to analyze relationships between numerical features.
+Identified key features that impact classification.
+
+2) Model Selection and Optimization
+
+ Chosen Model: Support Vector Regressor (SVR).
+
+ Reason: SVM is well-suited for small to medium-sized datasets and efficiently captures nonlinear relationships.
+
+
+ Initial Model Training:
+
+Default SVR with RBF kernel was trained on standardized data.
+Baseline performance was measured using Mean Squared Error (MSE) and R² Score.
+
+ Hyperparameter Tuning:
+
+ Used RandomizedSearchCV for tuning:
+
+C (Regularization parameter)
+Kernel type (linear, rbf)
+Gamma (Kernel coefficient)
+Cross-validation (CV=3) was applied to select the best model.
+
+3) Model Performance
+
+ Initial Model Performance:
+
+ Default SVR Results:
+
+ MSE: Reported before tuning.
+
+ R² Score: Evaluated on the test set.
+
+ Optimized Model Performance:
+
+The best hyperparameters from RandomizedSearchCV were used to retrain SVR.
+Improved MSE and R² Score were achieved with the optimized model.
+A comparison between default and tuned SVR was performed.
+
+4) Conclusion and Findings
+
+The optimized SVR model outperformed the default SVR, reducing prediction error.
+
+ Future Improvements:
+
+Experiment with polynomial kernels for potential performance gains.
+Consider additional feature engineering to enhance model interpretability.
