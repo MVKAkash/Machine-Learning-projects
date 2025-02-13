@@ -1,0 +1,66 @@
+Ecommerce Customer Spending Prediction using Linear Regression
+
+
+1) Data Preprocessing Techniques
+
+Dataset: The dataset contains customer information such as session time, purchase history, and website interactions, with the target variable being the total amount spent.
+
+ Handling Missing Values:
+
+Checked for missing values, and none were found.
+
+ Feature Engineering:
+
+Removed unnecessary columns like Email to avoid irrelevant features.
+Renamed columns for consistency.
+Standardized numerical features using StandardScaler.
+
+ Exploratory Data Analysis (EDA):
+
+Used Seaborn pair plots to examine relationships between numerical features.
+Created a correlation heatmap to identify highly correlated features.
+
+
+2) Model Selection and Optimization
+
+ Chosen Model: 
+
+Linear Regression.
+
+ Reason: 
+
+Linear Regression is suitable for continuous target prediction and helps in understanding feature impact.
+
+ Data Splitting:
+
+The dataset was split into 80% training and 20% testing.
+
+ Model Training:
+
+A Linear Regression model was trained on the dataset.
+
+Predictions were made on the test set.
+
+3) Model Performance
+
+ Evaluation Metrics Used:
+
+Mean Squared Error (MSE)
+R-Squared Score (R²)
+Residual Plots to check for homoscedasticity.
+
+ Results:
+
+The model achieved a high R² score, indicating good predictive power.
+MSE was relatively low, suggesting minimal error in predictions.
+Feature importance analysis revealed the most influential customer attributes.
+
+4) Conclusion and Findings
+
+Linear Regression effectively predicted customer spending.
+
+ Future Improvements:
+
+Try Polynomial Regression for capturing non-linear relationships.
+Use Lasso Regression to eliminate insignificant features.
+Implement Random Forest Regressor for better performance with complex interactions.
