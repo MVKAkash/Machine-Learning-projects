@@ -1,0 +1,65 @@
+Titanic Survival Prediction using Random Forest Classifier
+
+1) Data Preprocessing Techniques
+
+ Dataset: The dataset contains passenger details such as age, class, gender, and survival status.
+
+ Handling Missing Values:
+
+Numerical features were imputed with the median value.
+Categorical features were imputed with the most frequent value.
+
+ Feature Engineering:
+
+ Removed irrelevant columns: PassengerId, Name, Ticket, and Cabin.
+Converted categorical features (Sex, Embarked) into numerical values using Ordinal Encoding.
+
+ Exploratory Data Analysis (EDA):
+
+Checked frequency distributions for numerical variables.
+Examined class distributions in categorical variables.
+
+2) Model Selection and Optimization
+ 
+ Chosen Model: Random Forest Classifier.
+
+ Reason: Random Forest is robust against overfitting, can handle missing values, and provides feature importance insights.
+
+ Initial Model Training:
+
+Default Random Forest Classifier was trained on the dataset.
+Performance was evaluated using Accuracy Score and Classification Report.
+
+ Hyperparameter Tuning:
+
+ Used RandomizedSearchCV for tuning:
+
+n_estimators (Number of trees)
+max_depth (Tree depth)
+min_samples_split (Minimum samples required to split)
+min_samples_leaf (Minimum samples per leaf)
+Cross-validation (CV=3) was applied for better model selection.
+
+3) Model Performance
+
+ Initial Model Performance:
+
+ Default Random Forest Results:
+
+ Accuracy Score: Reported before tuning.
+
+ Classification Report: Provided precision, recall, and F1-score.
+
+ Optimized Model Performance:
+
+The best hyperparameters from RandomizedSearchCV were used to retrain Random Forest.
+Improved accuracy and classification metrics were observed.
+Feature importance analysis was conducted to determine which features had the highest impact on survival predictions.
+
+4) Conclusion and Findings
+
+The optimized Random Forest model provided improved classification accuracy.
+
+ Future Improvements:
+Experiment with ensemble techniques like XGBoost for further accuracy gains.
+Perform deeper feature engineering, such as creating interaction terms or deriving new insights from ticket numbers.
