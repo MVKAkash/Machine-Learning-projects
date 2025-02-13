@@ -1,0 +1,6 @@
+Report on Decision Tree (Pima Indians Diabetes Database):
+
+The dataset contains 768 entries with 9 columns, including features like pregnancies, glucose, blood pressure, BMI, and insulin levels.
+Data preprocessing involved splitting into X_train (614 samples) and X_test (154 samples) with 8 features.
+The Decision Tree model achieved an accuracy of 72.08%.
+The confusion matrix and classification report indicate moderate precision and recall, with better performance in predicting non-diabetic cases.
