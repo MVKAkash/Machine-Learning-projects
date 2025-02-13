@@ -1,0 +1,7 @@
+Report on AdaBoost (Tennis Players Dataset):
+
+The dataset contains records of tennis players, including attributes like Player Name, Date of Birth, Sex, Weeks Ranked, and Ranking Date.
+There are 101 female and 97 male players in the dataset.
+Data preprocessing involved encoding categorical features and transforming dates into numerical formats.
+Features include Weeks Ranked, Age (in days/years), and Ranking Date (year/month).
+The AdaBoost model was applied, but accuracy and performance metrics were not extracted in the summary.
