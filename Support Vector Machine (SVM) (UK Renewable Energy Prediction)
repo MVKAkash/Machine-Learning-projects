@@ -1,0 +1,56 @@
+UK Renewable Energy Prediction using Support Vector Machine (SVM)
+
+1) Data Preprocessing Techniques
+
+ Dataset: The dataset contains renewable energy production data from the UK.
+
+ Handling Missing Values: Checked for missing values and provided summary statistics.
+
+ Feature Engineering:
+
+Removed the "Year" column to prevent data leakage.
+Standardized numerical features using StandardScaler for optimal SVM performance.
+
+ Exploratory Data Analysis (EDA):
+
+Conducted correlation analysis using a heatmap.
+Performed univariate analysis with histograms and boxplots.
+Examined scatter plots to understand feature relationships.
+
+2) Model Selection and Optimization
+
+ Chosen Model: Support Vector Regressor (SVR).
+
+ Reason: SVM regression is effective for capturing nonlinear relationships in energy data.
+
+ Hyperparameter Tuning:
+
+ Used GridSearchCV to optimize parameters such as:
+
+C (Regularization parameter)
+Kernel type (linear, rbf, poly)
+Gamma (Kernel coefficient)
+Epsilon (Tolerance for errors)
+Applied cross-validation (CV=3) to enhance model generalization.
+
+3) Model Performance
+
+ Initial Model Performance:
+
+Mean Squared Error (MSE) and R-squared (R²) values were calculated.
+Scatter plots of actual vs. predicted values were generated for visual evaluation.
+
+ Optimized Model Performance:
+
+The best model from GridSearchCV was retrained on the data.
+Improved MSE and R² scores were reported.
+
+4) Conclusion and Findings
+
+The optimized SVR model achieved better predictive accuracy.
+The feature importance analysis provided insights into key energy predictors.
+
+ Future Improvements:
+
+Experiment with different kernels and ensemble learning.
+Integrate additional external factors (e.g., weather data) for better accuracy.
