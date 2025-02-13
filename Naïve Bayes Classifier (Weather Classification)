@@ -1,0 +1,60 @@
+Weather Classification using Naïve Bayes Classifier
+
+1) Data Preprocessing Techniques
+
+ Dataset: The dataset contains weather attributes such as temperature, humidity, wind speed, and atmospheric pressure, with the target variable being "Weather Type."
+
+ Handling Missing Values: No explicit missing value handling was mentioned, indicating no missing data.
+
+ Feature Engineering:
+
+ Binning: Numerical features (e.g., Temperature, Humidity, Wind Speed) were discretized into 5 bins using KBinsDiscretizer.
+
+ Encoding:
+
+One-Hot Encoding was applied to categorical features such as Cloud Cover, Season, and Location.
+The target variable was treated as categorical.
+
+ Exploratory Data Analysis (EDA):
+
+Count plots were used to analyze the distribution of different weather types.
+
+2) Model Selection and Optimization
+
+ Chosen Model: Naïve Bayes Classifier (Multiple Variants).
+
+ Reason: Naïve Bayes is efficient for categorical and discrete data and performs well in classification tasks with probabilistic assumptions.
+
+ Different Naïve Bayes Variants Tested:
+
+ Categorical Naïve Bayes (CategoricalNB): Used for categorical features.
+
+ Multinomial Naïve Bayes (MultinomialNB): Applied to frequency-based features.
+
+ Gaussian Naïve Bayes (GaussianNB): Used for continuous features after Power Transformation and Standard Scaling.
+
+ Data Splitting: The dataset was split into 80% training and 20% testing.
+
+3) Model Performance
+
+ Evaluation Metrics Used:
+
+Accuracy Score
+Confusion Matrix
+Classification Report (Precision, Recall, F1-score)
+
+ Comparison of Models:
+
+The Categorical Naïve Bayes model performed best for weather classification.
+GaussianNB struggled with performance since it assumes normal distribution, whereas weather data may not follow a Gaussian pattern.
+MultinomialNB performed moderately well but was not as effective as CategoricalNB.
+
+4) Conclusion and Findings
+
+The Categorical Naïve Bayes model was the most effective for weather classification.
+
+ Future Improvements:
+
+Experiment with other probabilistic classifiers, such as Bayesian Networks, for better accuracy.
+Perform deeper feature engineering by extracting more meaningful weather patterns.
+Consider adding more meteorological features to enhance classification performance.
