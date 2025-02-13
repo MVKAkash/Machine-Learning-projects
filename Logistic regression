@@ -1,0 +1,71 @@
+Heart Disease Prediction using Logistic Regression
+
+1) Data Preprocessing Techniques
+
+ Dataset: The dataset contains medical attributes such as age, cholesterol level, blood pressure, and other health indicators to predict heart disease presence.
+
+ Handling Missing Values:
+
+ Categorical Features: Imputed using mode.
+ 
+ Numerical Features: Imputed using median.
+
+ Feature Engineering:
+
+ Encoding Categorical Variables:
+
+ Sex: Mapped ‘Male’ to 0 and ‘Female’ to 1.
+
+ Slope Feature: Ordinal encoding (upsloping, flat, downsloping).
+
+One-Hot Encoding applied to categorical features (cp, fbs, restecg, exang, thal).
+
+ Feature Scaling:
+
+Used StandardScaler to normalize numerical features like age, cholesterol, blood pressure.
+
+ Exploratory Data Analysis (EDA):
+
+Checked distributions of numerical features.
+Analyzed class imbalance in the target variable.
+
+2) Model Selection and Optimization
+
+ Chosen Model: Logistic Regression.
+
+ Reason: Logistic Regression is effective for binary classification, interpretable, and computationally efficient.
+
+ Data Splitting:
+
+The dataset was split into 80% training and 20% testing.
+
+ Model Training:
+
+A Logistic Regression model was trained on the dataset with max_iter = 1000 to ensure convergence.
+
+ Performance Evaluation:
+
+Accuracy and error metrics were calculated on the test set.
+
+3) Model Performance
+
+ Evaluation Metrics Used:
+Accuracy Score
+Mean Squared Error (MSE)
+Confusion Matrix
+Classification Report (Precision, Recall, F1-score)
+
+ Results:
+
+The Logistic Regression model achieved good accuracy in predicting heart disease.
+Confusion matrix analysis indicated some misclassification between heart disease presence and absence.
+
+4) Conclusion and Findings
+
+Logistic Regression performed well, making it a suitable model for medical diagnosis.
+
+ Future Improvements:
+
+Experiment with ensemble models like Random Forest or XGBoost for better predictive power.
+Address class imbalance using techniques like SMOTE (Synthetic Minority Over-sampling Technique).
+Consider adding more medical history features to improve accuracy.
