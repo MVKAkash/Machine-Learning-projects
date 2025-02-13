@@ -1,0 +1,29 @@
+K-Means Clustering Model Report (Accidents Dataset)
+
+1) Best Data Cleaning Techniques:
+
+ Handled missing values by:
+
+Dropping rows where latitude/longitude was missing.
+Filling other missing numerical values with 0.
+Converted the 'Incident Date' column to datetime format and extracted:
+Year, Month, Day, and Day of the week.
+Removed outliers using the Interquartile Range (IQR) method.
+Standardized numerical features using MinMaxScaler.
+Encoded categorical variables (State, City, and Address) using Label Encoding.
+
+2) Best Model and Why
+
+K-Means Clustering was used to group accident cases based on features like victims, suspects, location, and time.
+The Elbow Method was applied to determine the optimal number of clusters.
+The model effectively segmented accident cases into meaningful groups, helping to identify patterns in accident severity and location trends.
+
+3) Final Model and Clustering Results
+
+The final K-Means model was selected based on the optimal number of clusters derived from the Elbow Method.
+
+ Key findings:
+
+Cluster analysis showed distinct groupings based on accident severity and location.
+Visualization of clusters using a scatter plot helped understand geographical accident hotspots.
+The model provides insights into accident trends, which can help policymakers and safety authorities take preventive measures.
