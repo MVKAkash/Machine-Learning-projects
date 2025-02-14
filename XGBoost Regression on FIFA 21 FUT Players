@@ -1,0 +1,49 @@
+XGBoost Regression on FIFA 21 FUT Players Dataset
+
+Dataset Overview:
+
+ Total Rows: 22,330
+
+ Total Features: 21 (including player stats like PAC, SHO, PAS, DRI, DEF, PHY, etc.)
+
+ Target Variable: Ratings (Overall player rating)
+
+ Feature Types:
+
+ Numerical Features: SKI, WF, PAC, SHO, PAS, DRI, DEF, PHY, Popularity, BS
+
+ Categorical Features: Position, Version, WR, Body, Club, League, Country
+
+ Data Preprocessing:
+
+ Dropped irrelevant columns: (Name, PS, IGS)
+
+ Handled missing values:
+
+ Categorical: Filled with mode
+
+ Numerical: Filled with median
+ 
+ Encoded categorical features using Label Encoding
+
+ Feature selection: Removed redundant attributes
+
+ Split the data: 80% Training, 20% Testing
+
+ Model Training:
+
+ Algorithm: XGBoost Regressor
+
+ Hyperparameters:
+
+n_estimators=50
+learning_rate=0.1
+random_state=42
+
+ Evaluation Metrics:
+
+ Mean Absolute Error (MAE): (To be filled from execution)
+ 
+ Root Mean Squared Error (RMSE): (To be filled from execution)
+
+ R² Score: (To be filled from execution)
